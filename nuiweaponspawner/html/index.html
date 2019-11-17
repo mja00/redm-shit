@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="container">
+            <form id="form">
+                <select id = "input">
+                    <option value = "WEAPON_MOONSHINEJUG">Moonshine Jug</option>
+                    <option value = "WEAPON_MELEE_LANTERN_ELECTRIC">Electric Lantern</option>
+                    <option value = "WEAPON_MELEE_TORCH">Torch</option>
+                    <option value = "WEAPON_MELEE_BROKEN_SWORD">Broken Sword</option>
+                    <option value = "WEAPON_FISHINGROD">Fishing Rod</option>
+                    <option value = "WEAPON_MELEE_HATCHET">Hatchet</option>
+                    <option value = "WEAPON_MELEE_CLEAVER">Cleaver</option>
+                    <option value = "WEAPON_MELEE_ANCIENT_HATCHET">Ancient Hatchet</option>
+                    <option value = "WEAPON_MELEE_HATCHET_VIKING">Viking Hatchet</option>
+                    <option value = "WEAPON_MELEE_HATCHET_HEWING">Hewing Hatchet</option>
+                    <option value = "WEAPON_MELEE_HATCHET_DOUBLE_BIT">Double Bit Hatchet</option>
+                    <option value = "WEAPON_MELEE_HATCHET_DOUBLE_BIT_RUSTED">Double Bit Hatchet Rusted</option>
+                    <option value = "WEAPON_MELEE_HATCHET_HUNTER">Hunter Hatchet</option>
+                    <option value = "WEAPON_MELEE_HATCHET_HUNTER_RUSTED">Rusty Hunter Hatchet</option>
+                    <option value = "WEAPON_MELEE_KNIFE_JOHN">John Knife</option>
+                    <option value = "WEAPON_MELEE_KNIFE">Knife</option>
+                    <option value = "WEAPON_MELEE_KNIFE_JAWBONE">Jawbone Knife</option>
+                    <option value = "WEAPON_THROWN_THROWING_KNIVES">Throwing Knives</option>
+                    <option value = "WEAPON_MELEE_KNIFE_MINER">Miner Knife</option>
+                    <option value = "WEAPON_MELEE_KNIFE_CIVIL_WAR">Civil War Knife</option>
+                    <option value = "WEAPON_MELEE_KNIFE_BEAR">Bear Knife</option>
+                    <option value = "WEAPON_MELEE_KNIFE_VAMPIRE">Vampire Knife</option>
+                    <option value = "WEAPON_LASSO">Lasso</option>
+                    <option value = "WEAPON_MELEE_MACHETE">Machete</option>
+                    <option value = "WEAPON_THROWN_TOMAHAWK">Tomahawk</option>
+                    <option value = "WEAPON_THROWN_TOMAHAWK_ANCIENT">Ancient Tomahawk</option>
+                    <option value = "WEAPON_PISTOL_M1899">M1899</option>
+                    <option value = "WEAPON_PISTOL_MAUSER">Mauser</option>
+                    <option value = "WEAPON_PISTOL_MAUSER_DRUNK">Drunk Mauser????</option>
+                    <option value = "WEAPON_PISTOL_SEMIAUTO">Semi-auto Pistol</option>
+                    <option value = "WEAPON_PISTOL_VOLCANIC">Volcanic Pistol</option>
+                    <option value = "WEAPON_REPEATER_CARBINE">Carbine Repeater</option>
+                    <option value = "WEAPON_REPEATER_EVANS">Evans Repeater</option>
+                    <option value = "WEAPON_REPEATER_HENRY">Henry Repeater</option>
+                    <option value = "WEAPON_RIFLE_VARMINT">Varmint Rifle</option>
+                    <option value = "WEAPON_REPEATER_WINCHESTER">Winchester Repeater</option>
+                    <option value = "WEAPON_REVOLVER_CATTLEMAN">Cattleman Revolver</option>
+                    <option value = "WEAPON_REVOLVER_CATTLEMAN_JOHN">Cattleman Revolver - John Variant</option>
+                    <option value = "WEAPON_REVOLVER_CATTLEMAN_MEXICAN">Cattleman Revolver - Mexican Variant</option>
+                    <option value = "WEAPON_REVOLVER_CATTLEMAN_PIG">Cattleman Revolver - Pig Variant</option>
+                    <option value = "WEAPON_REVOLVER_DOUBLEACTION">Doubleaction Revolver</option>
+                    <option value = "WEAPON_REVOLVER_DOUBLEACTION_EXOTIC">Exotic Doubleaction Revolver</option>
+                    <option value = "WEAPON_REVOLVER_DOUBLEACTION_GAMBLER">Gambler Doubleaction Revolver</option>
+                    <option value = "WEAPON_REVOLVER_DOUBLEACTION_MICAH">Micah Doubleaction Revolver</option>
+                    <option value = "WEAPON_REVOLVER_LEMAT">Lemat Revolver</option>
+                    <option value = "WEAPON_REVOLVER_SCHOFIELD">Schofield Revolver</option>
+                    <option value = "WEAPON_REVOLVER_SCHOFIELD_GOLDEN">Golden Schofield Revolver</option>
+                    <option value = "WEAPON_REVOLVER_SCHOFIELD_CALLOWAY">Calloway Schofield Revolver</option>
+                    <option value = "WEAPON_RIFLE_BOLTACTION">Bolt Action Rifle</option>
+                    <option value = "WEAPON_SNIPERRIFLE_CARCANO">Carcano Rifle</option>
+                    <option value = "WEAPON_SNIPERRIFLE_ROLLINGBLOCK">Rolling Block Rifle</option>
+                    <option value = "WEAPON_SNIPERRIFLE_ROLLINGBLOCK_EXOTIC">Exotic Rolling Block Rifle</option>
+                    <option value = "WEAPON_RIFLE_SPRINGFIELD">Springfield Rifle</option>
+                    <option value = "WEAPON_SHOTGUN_DOUBLEBARREL">Double Barrel Shotgun</option>
+                    <option value = "WEAPON_SHOTGUN_DOUBLEBARREL_EXOTIC">Exotic Double Barrel Shotgun</option>
+                    <option value = "WEAPON_SHOTGUN_PUMP">Pump Shotgun</option>
+                    <option value = "WEAPON_SHOTGUN_REPEATING">Repeating Shotgun</option>
+                    <option value = "WEAPON_SHOTGUN_SAWEDOFF">Sawedoff Shotgun</option>
+                    <option value = "WEAPON_SHOTGUN_SEMIAUTO">Semi-auto Shotgun</option>
+                    <option value = "WEAPON_BOW">Bow</option>
+                    <option value = "WEAPON_THROWN_DYNAMITE">Thrown Dynamite</option>
+                    <option value = "WEAPON_THROWN_MOLOTOV">Molotov</option>
+                  </select>
+                <br>
+                <button id="submit" type="submit">Spawn Weapon</button>
+                <button id="close">Close</button>
+            </form>
+		</div>
+        <script src="./index.js" type="text/javascript"></script>
+	</body>
+</html>
