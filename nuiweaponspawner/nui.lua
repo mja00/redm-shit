@@ -9,16 +9,13 @@ RegisterNUICallback("main", function(data)
     chat(data.text)
     giveWeaponNow(data.text)
     setDisplay(false)
-end)
-
-RegisterNUICallback("error", function(data)
-    chat(data.error)
-    setDisplay(false)
+    SetNuiFocus(false, false)
 end)
 
 RegisterNUICallback("exit", function(data)
     chat("Exited")
     setDisplay(false)
+    SetNuiFocus(false, false)
 end)
 
 Citizen.CreateThread(function()
