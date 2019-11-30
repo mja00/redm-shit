@@ -20,30 +20,19 @@ $(function () {
 
     document.onkeyup = function (data) {
         if (data.which == 27) {
-            $.post("http://nui/exit", JSON.stringify({}));
+            $.post("http://nuiweaponspawner/exit", JSON.stringify({}));
             return;
         }
     }
 
     $("#close").click(function() {
-        $.post("http://nui/exit", JSON.stringify({}));
+        $.post("http://nuiweaponspawner/exit", JSON.stringify({}));
         return;
     })
 
     $("#submit").click(function() {
         let inputVal = $("#input").val()
-        if (inputVal.legnth  >= 100) {
-            $.post("http://nui/error", JSON.stringify({
-                error: "Too many characters. Must be less than 100."
-            }))
-            return;
-        } else if (!inputVal) {
-            $.post("http://nui/error", JSON.stringify({
-                error: "Input field was blank."
-            }))
-            return;
-        }
-        $.post("http://nui/main", JSON.stringify({
+        $.post("http://nuiweaponspawner/main", JSON.stringify({
             text: inputVal
         }))
         return;
